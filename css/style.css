@@ -4,36 +4,35 @@ body {
   }
   header {
     background-color: #fff;
-    padding: 48px;
+    padding: 4rem;
     position: sticky;
   }
   header img {
-    max-height: 4vh;
-    /* border-radius: 100%; */
-    /* object-position: 50% 50%; */
-    /* object-fit: cover; */
+    max-height: 2rem;
   }
   header ul {
     float: right;
     color: #000;
-    padding-right: 48px;
-    padding-top: 8px;
+    padding-right: 3rem;
+    padding-top: 1rem;
     font-family: 'Lato', 'Roboto', sans-serif;
     font-weight: bold;
   }
   header li {
     display: inline-block;
-    padding: 0px 24px;
+    padding: 0px 2rem;
   }
   header p {
     display: inline-block;
   }
-  .heroImg {
+  
+  /* .heroImg {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: relative;
     background-size: cover;
-  }
+  } 
+    */
 
   /* Text styles */
   .hero1 {
@@ -45,61 +44,10 @@ body {
   .heroFine {
     font-size: small;
   }
+  .card-title {
+    font-weight: 700;
+  }
   
-
-  /* Hero */
- /* #heroGrid {
-    margin: 0px 5%;
-    display: grid;
-    min-height: 500px;
-    height: 70vh;
-    grid-template-rows: 75% 25%;
-    grid-template-columns: 75% 25%;
-    grid-template-areas:
-    "featuredProduct secondaryProduct"
-    "featuredProduct CTA";
-  } */
-
-  /*#featuredProduct {
-    grid-area: featuredProduct;
-    background-image: url("../images/furniture1.png");
-  }
-  #secondaryProduct {
-    grid-area: secondaryProduct;
-    background-image: url("../images/furniture2.png");
-  }
-  #CTA {
-    grid-area: CTA;
-    background-image: url("../images/woodbg.png");
-    justify-content: space-around;
-    cursor: pointer;
-  }*/
-  #headline {
-    background-color: rgba(255,255,255,0.6);
-    border-bottom: 4px solid #00a2ff;
-    position: absolute;
-    right: -70vh;
-    top: 15vh;
-    padding: 25px;
-    max-width: 60vh;
-    z-index: 100;
-  }
- .heroGridArea {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    display: flex;
-    position: relative;
-  }
-
-  .content {
-    max-width: 300px;
-    margin-left: 33%;
-    padding: 50px;
-    /* background-color: rgba(0,0,0,0.3); */
-    text-align: left;
-  }
   button {
     padding: 8px;
     padding-left: 12px;
@@ -109,35 +57,14 @@ body {
     font-size: 15px;
     border-radius: 4px;
   }
-  #resume {
-    display: block;
-    margin: auto;
-  }
 
-  /*
-  .container {
-    position: relative;
-    background: green;
-    width: 640px;
-    height: 640px;
-    margin: 20px auto;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
-  }*/
-
-  .flexContainer {
+  /* Skills section */
+  .flexContainer { 
     display: flex;
     flex-direction: row; /* Note: row is default, but it doesn't hurt to practice! */
     grid-template-rows: 33% 33% 33%;
     justify-content: left;
     align-items: right;
-  }
-  .workGrid {
-    display: grid;
-    background: white;
-    padding-top: 24px;
-    padding-bottom: 24px;
   }
   .mySkills {
     z-index: 3;
@@ -147,9 +74,20 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
   }
+  
+  /* Work section */
   .myWork {
-    padding: 24px;
+    padding: 4rem;
   }
+  .workGrid {
+    display: grid;
+    padding: 4rem;
+  }
+
+
+  /* About section */
+
+  /* Contact section */
   footer {
     background-color: #373738;
     padding: 5px;

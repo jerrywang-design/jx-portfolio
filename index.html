@@ -14,15 +14,16 @@
   </head>
   <body>
 
-    <header>
+    <header id="Home">
       <a href="http://jerrywang-design">
             <img src="images/logo_JERRY_1.png">
       </a>
       <ul>
-        <li>HOME</li> <!-- Top of page -->
-        <li>WORK</li> <!-- UX and UX-related -->
-        <li><a href="https://jerrywang-design.github.io/UX_UI_HW_20/">ABOUT</a></li> <!-- Includes my Hobbies, past Work Experience, etc. -->
-        <li>CONTACT</li> <!-- Resume link -->
+        <li><a href="#Home">HOME</a></li> <!-- Top of page -->
+        <li><a href="#Work">WORK</a></li> <!-- UX and UX-related -->
+        <li><a href="#About">ABOUT</a></li> <!-- Includes my Hobbies, past Work Experience, etc. -->
+        <li><a href="#Contact">CONTACT</a></li> 
+        <button><h5>Resume</h5></button> <!-- Resume link -->
       </ul>
     </header>
 
@@ -36,67 +37,93 @@
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <!--  My UX Skills section coded using CSS flex -->
-    <section class="mySkills">
+<!--    <section class="mySkills">
       <h1>My UX Skills</h1>
       <div class="flexContainer">
         <div>
-          <img> <!-- an image that depicts my first skill -->
+          <img>
           <h3>Figma</h3>
           <p>I use Figma to develop low- and high-fidelity prototypes, on Desktop, Mobile, and Wearables.</p>
         </div>
         <div>
-          <img> <!-- an image that depicts my second skill -->
+          <img>
           <h3>User Interviewing</h3>
           <p>I empathize emotionally with the user. I help them feel heard and understood by repeating what they said using my own words. I gently assure them there are no wrong answers.
 
           </p>
         </div>
         <div>
-          <img> <!-- an image that depicts my third skill -->
+          <img>
           <h3>Presentation</h3>
           <p>When presenting work, I excel at using a conversational style that helps the audience feel personally engaged with. I make sure that the farther person in the room can hear me, and I assume that not everyone in the audience will fully understand UX/UI/Developer vocabulary.</p>
         </div>
       </div>
     </section>
+-->
 
-    <section class="myWork">
-      <h1>My Work</h1>
-      <div class="workGrid">
-
-        <div>
-          <img>
-          <div>
-            <h4>DearHooman</h4>
-            <p>Pets form an intimate bond with their owners. We gave users a way to document and commemorate this deeply personal relationship.
-            </p>
-            <button>See More</button>
-          </div>
+<!-- Work section -->
+    <section id="Work" class="myWork">
+        <h1>Work</h1>
+        <div class="workGrid">
+            <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+                <div class="card" style="width: 25%;">
+                    <img src="images\caseStudy_1_dearHooman_cover.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DearHooman</h5>
+                        <p class="card-text">Pets form an intimate bond with their owners. We gave users a way to document and commemorate this deeply personal relationship.</p>
+                        <a href="#" class="btn btn-primary">Expand to See More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 25%;">
+                    <img src="images\caseStudy_2_tonys_place_cover.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tony's Place</h5>
+                        <p class="card-text">We reorganized and refreshed Tony’s Place’s website to more accurately show users how bright and welcoming they truly are. We also gave them a way to help users who could not physically reach their building.</p>
+                        <a href="#" class="btn btn-primary">Expand to See More</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div>
-          <img>
-          <div>
-            <h4>Tony's Place</h4>
-            <p>We reorganized and refreshed Tony’s Place’s website to more accurately show users how bright and welcoming they truly are. We also gave them a way to help users who could not physically reach their building.
-            </p>
-            <button>See More</button>
-          </div>
+<!-- About section -->
+    <section id="About" class="myWork">
+        <h1>About</h1>
+        <div class="workGrid">
+            <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+                <div class="card" style="width: 25%;">
+                    <img src="images\caseStudy_1_dearHooman_cover.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Past Work</h5>
+                        <p class="card-text">I used to be a Groundskeeper for the Univesity of Michigan, helping the campus to look beautiful for students, faculty, staff and visitors.</p>
+                        <a href="#" class="btn btn-primary">Expand to See More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 25%;">
+                    <img src="images\caseStudy_2_tonys_place_cover.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hobbies</h5>
+                        <p class="card-text">I enjoy running and exercise (slowly becoming a morning bird!), and I also love board games.</p>
+                        <a href="#" class="btn btn-primary">Expand to See More</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <br><br><br>
-      <button>
-        <h3>View All Projects</h3>
-      </button>
     </section>
 
 
-    <br><br><br>
-    <footer>
+
+
+<!-- Contact section -->
+    <footer id="Contact">
       <ul>
-        <li>ABOUT</li>
-        <li>SKILLS</li>
-        <li>WORK</li>
-        <li>CONTACT</li>
+        <li><a href="#Home">HOME</a></li>
+        <li><a href="#Work">WORK</a></li>
+        <li><a href="#About">ABOUT</a></li>
+        <li><a href="#Contact">CONTACT</a></li>
+        <button>
+            <h5>Resume</h5>
+        </button>
       </ul>
     </footer>
 
