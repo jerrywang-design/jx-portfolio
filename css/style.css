@@ -1,3 +1,8 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', Helvetica, sans-serif;
     color: #000;
@@ -25,16 +30,12 @@ body {
   header p {
     display: inline-block;
   }
-  
-  /* .heroImg {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: relative;
-    background-size: cover;
-  } 
-    */
 
   /* Text styles */
+  h1 {
+    padding: 4rem;
+  }
+
   .hero1 {
     font-size: xx-large;
   }
@@ -58,6 +59,16 @@ body {
     border-radius: 4px;
   }
 
+  /* Hero section */
+  .jumbotron {
+    z-index: 999;
+  }
+
+  .heroFrame {
+    height: 40rem;
+    overflow: hidden;
+  }
+
   /* Skills section */
   .flexContainer { 
     display: flex;
@@ -76,12 +87,20 @@ body {
   }
   
   /* Work section */
-  .myWork {
-    padding: 4rem;
+  .container-fluid {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
+
   .workGrid {
     display: grid;
-    padding: 4rem;
+    padding: 8rem;
+  }
+  .cardContainer {
+    margin: 0px;
+  }
+  .card {
+    margin: 0 auto;
   }
 
 
@@ -113,6 +132,7 @@ body {
 
   canvas {
     background: transparent;
+    margin-bottom: -6px;
   }
 /* end Canvas Eraser */
 

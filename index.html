@@ -28,13 +28,24 @@
     </header>
 
     <!-- Canvas Eraser courtesy of: https://codepen.io/progrape/pen/XXBwWe -->
-<div class="box paintbrush">
-  <canvas id="canvas">
-    
-  </canvas>
+<div class="heroFrame">
+  <div class="box paintbrush">
+    <canvas id="canvas"></canvas>
+  </div>
 </div>
 <!-- end Canvas Eraser -->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- JUMBOTRON
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <a class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#exampleModal">Learn more</a>
+  </div>
+-->
+
+
 
 <!--  My UX Skills section coded using CSS flex -->
 <!--    <section class="mySkills">
@@ -61,49 +72,66 @@
     </section>
 -->
 
-<!-- Work section -->
-    <section id="Work" class="myWork">
-        <h1>Work</h1>
-        <div class="workGrid">
-            <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
-                <div class="card" style="width: 25%;">
+<h1>Work</h1>
+    <section id="Work" class="container-fluid"> <!-- container-fluid stretches to fill the width of the viewport. -->
+
+          <div class="row">
+            <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+                <div class="card">
                     <img src="images\caseStudy_1_dearHooman_cover.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">DearHooman</h5>
+                        <h5 class="card-title">DearHooman Mobile App</h5>
                         <p class="card-text">Pets form an intimate bond with their owners. We gave users a way to document and commemorate this deeply personal relationship.</p>
                         <a href="#" class="btn btn-primary">Expand to See More</a>
                     </div>
                 </div>
-                <div class="card" style="width: 25%;">
-                    <img src="images\caseStudy_2_tonys_place_cover.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Tony's Place</h5>
-                        <p class="card-text">We reorganized and refreshed Tony’s Place’s website to more accurately show users how bright and welcoming they truly are. We also gave them a way to help users who could not physically reach their building.</p>
-                        <a href="#" class="btn btn-primary">Expand to See More</a>
-                    </div>
-                </div>
             </div>
-        </div>
+
+            <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+              <div class="card">
+                <img src="images\caseStudy_2_tonys_place_cover.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tony's Place</h5>
+                    <p class="card-text">We reorganized and refreshed Tony’s Place’s website to more accurately show users how bright and welcoming they truly are. We also gave them a way to help users who could not physically reach their building.</p>
+                    <a href="#" class="btn btn-primary">Expand to See More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+              <div class="card">
+                <img src="images\caseStudy_3_ecoKidsAdventures_1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">EcoKids Adventures</h5>
+                    <p class="card-text">Prototyped Website & Game for children 4-8 y.o.
+                    </p>
+                    <a href="#" class="btn btn-primary">Expand to See More</a>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- close Row -->
+
     </section>
 
 <!-- About section -->
-    <section id="About" class="myWork">
+    <section id="About">
         <h1>About</h1>
         <div class="workGrid">
             <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
-                <div class="card" style="width: 25%;">
-                    <img src="images\caseStudy_1_dearHooman_cover.png" class="card-img-top" alt="...">
+                <div class="card">
+                    <img src="images\pastWork_groundskeeping_1.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Past Work</h5>
                         <p class="card-text">I used to be a Groundskeeper for the Univesity of Michigan, helping the campus to look beautiful for students, faculty, staff and visitors.</p>
                         <a href="#" class="btn btn-primary">Expand to See More</a>
                     </div>
                 </div>
-                <div class="card" style="width: 25%;">
-                    <img src="images\caseStudy_2_tonys_place_cover.png" class="card-img-top" alt="...">
+                <div class="card">
+                    <img src="images\pastWork_boardGames_lionandeagle_1.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Hobbies</h5>
-                        <p class="card-text">I enjoy running and exercise (slowly becoming a morning bird!), and I also love board games.</p>
+                        <p class="card-text">I and two partners created a World War II-themed board game, for which I conducted playtest sessions for feedback and provided visual design. I also enjoy running and ran in the 2022 Ann Arbor Probility Marathon.</p>
                         <a href="#" class="btn btn-primary">Expand to See More</a>
                     </div>
                 </div>
