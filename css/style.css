@@ -6,20 +6,28 @@ html {
 body {
     font-family: 'Poppins', Helvetica, sans-serif;
     color: #000;
+    padding-top: 4rem; /* pushes content below fixed navbar, BUT will also push fixed navbar down; see "top:", below */
   }
   header {
     background-color: #fff;
-    padding: 4rem;
-    position: sticky;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    position: fixed; /* keeps navbar *fixed* to top of viewport, instead of disappearing upon scrolling down */
+    width: 100%;
+    z-index: 999;
+    top: 0; /* vertically places fixed navbar back to top of viewport */
   }
+.header-padding {
+  padding-top: 0rem;
+}
   header img {
-    max-height: 2rem;
+    max-height: 2rem; /* limits size of my logo image */
+/* didn't seem to do anything */    vertical-align: middle; 
   }
   header ul {
     float: right;
     color: #000;
-    padding-right: 3rem;
-    padding-top: 1rem;
     font-family: 'Lato', 'Roboto', sans-serif;
     font-weight: bold;
   }
@@ -85,22 +93,28 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
   }
+
+  .divider {
+    height: 1rem;
+  }
   
   /* Work section */
   .container-fluid {
     padding-left: 4rem;
     padding-right: 4rem;
-  }
-
-  .workGrid {
-    display: grid;
-    padding: 8rem;
+    display: flex;
+    flex-flow: row wrap;
   }
   .cardContainer {
     margin: 0px;
+    padding: 24px;
+    flex: 0 0 33.333%; /* flex-grow | flex-shrink | flex-basis */
+    display: flex; /* this made the cards the same vertical height */
   }
   .card {
     margin: 0 auto;
+    flex: 0 0 100%;
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
   }
 
 
@@ -109,16 +123,32 @@ body {
   /* Contact section */
   footer {
     background-color: #373738;
-    padding: 5px;
     color: white;
   }
   footer ul {
-    list-style: none;
-    padding-left: 5px;
+    list-style: none; /* gets rid of bullet points */
   }
   footer li {
     display: inline-block;
-    padding: 0px 7px;
+    margin: 24px;
+  }
+
+  .container-fluid-footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .cardContainer-footer {
+    margin: 0px;
+    padding: 24px;
+    flex: 0 0 33.333%; /* flex-grow | flex-shrink | flex-basis */
+    display: flex; /* this made the cards the same vertical height */
+  }
+  .card-footer {
+    margin: 0 auto;
+    flex: 0 0 100%;
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
   }
 
 
