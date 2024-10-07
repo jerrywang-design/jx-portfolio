@@ -44,6 +44,7 @@ body {
     padding: 4rem;
   }
 
+
   .hero1 {
     font-size: xx-large;
   }
@@ -55,6 +56,10 @@ body {
   }
   .card-title {
     font-weight: 700;
+  }
+  .tableOfContents-title {
+    text-align: center;
+    font-weight: 900;
   }
   
   button {
@@ -116,9 +121,45 @@ body {
     flex: 0 0 100%;
     box-shadow: 0 0 4px rgba(0,0,0,0.4);
   }
+  .card2 {
+    margin: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem;
+  }
+  .card2:hover {
+    border-bottom: 0.2rem solid #888;
+    margin-bottom: -0.2rem;
+  }
+  
+  .card-invisible-tableOfContents {
+    margin: 0 auto;
+    flex: 1 0 33%;
+  }
+  .card-invisible-contents {
+    margin: 0 auto;
+    flex: 2 0 67%;
+  }
+
 
 
   /* About section */
+  a.template-image div.green:hover~img{
+    content: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a9614526-315c-495d-be50-d0c38dfd91c0/dcako6j-35f3049e-3365-43d9-bcfb-8b755fa77969.jpg/v1/fill/w_1024,h_749,q_75,strp/aquatan_battle_commander_by_jerryboomerwang_dcako6j-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzQ5IiwicGF0aCI6IlwvZlwvYTk2MTQ1MjYtMzE1Yy00OTVkLWJlNTAtZDBjMzhkZmQ5MWMwXC9kY2FrbzZqLTM1ZjMwNDllLTMzNjUtNDNkOS1iY2ZiLThiNzU1ZmE3Nzk2OS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.7obsqiPllsgNtnCT4U9CZvYA0h0q7VESuFyJ1yuOSMM);
+   }
+   
+   a.template-image div.orange:hover ~ img {
+    content: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a9614526-315c-495d-be50-d0c38dfd91c0/degcmnb-2bbbea96-603b-4263-abf3-2a87bf8278dc.jpg/v1/fill/w_980,h_816,q_70,strp/inspired_by_triton_salamander__xardion__snes_1992__by_jerryboomerwang_degcmnb-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjE1MCIsInBhdGgiOiJcL2ZcL2E5NjE0NTI2LTMxNWMtNDk1ZC1iZTUwLWQwYzM4ZGZkOTFjMFwvZGVnY21uYi0yYmJiZWE5Ni02MDNiLTQyNjMtYWJmMy0yYTg3YmY4Mjc4ZGMuanBnIiwid2lkdGgiOiI8PTI1ODIifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.guKT4p27iBf3PwkDLErBjFI4LG2VGbbq901blYYEHWc);
+   }
+   
+   a.template-image div.red:hover ~ img {
+    content: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a9614526-315c-495d-be50-d0c38dfd91c0/dee71qd-6141f84c-0743-4210-9b20-f15894b515ac.jpg/v1/fill/w_894,h_894,q_70,strp/xardion_redesign_by_jerryboomerwang_dee71qd-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcL2E5NjE0NTI2LTMxNWMtNDk1ZC1iZTUwLWQwYzM4ZGZkOTFjMFwvZGVlNzFxZC02MTQxZjg0Yy0wNzQzLTQyMTAtOWIyMC1mMTU4OTRiNTE1YWMuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.3fU6mbfNlCWCPZKkaQYwKIt3zrgt9bAQu9xlmeg6E78);
+   }
+
+
+
+
+
 
   /* Contact section */
   footer {
@@ -174,4 +215,6 @@ body {
       cursor: url(../images/cursor_paintbrush_flaticon3.png), crosshair;
     }
     /* End paintbrush cursor */
+
+
   
