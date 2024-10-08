@@ -6,10 +6,11 @@ html {
 body {
     font-family: 'Poppins', Helvetica, sans-serif;
     color: #000;
+    background: #efefef;
     padding-top: 4rem; /* pushes content below fixed navbar, BUT will also push fixed navbar down; see "top:", below */
   }
   header {
-    background-color: #fff;
+    background-color: #efefef;
     padding-left: 4rem;
     padding-right: 4rem;
     padding-top: 1rem;
@@ -187,6 +188,7 @@ body {
     display: flex; /* this made the cards the same vertical height */
   }
   .card-footer {
+    align-content: right;
     margin: 0 auto;
     flex: 0 0 100%;
     box-shadow: 0 0 4px rgba(0,0,0,0.4);
