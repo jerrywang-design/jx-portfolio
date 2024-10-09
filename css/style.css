@@ -42,20 +42,37 @@ body {
   }
 
   /* Text styles */
-  a:link {
+  header a:link {
     color: #fff;
     font-weight: bolder;
     text-decoration: none;
   }
-  a:visited {
-    color: #ccc;
+  header a:visited {
+    color: #999;
     font-weight: bolder;
     text-decoration: none;
   }
-  a:hover {
+  header a:hover {
     text-decoration: underline;
   }
-  a:active {
+  header a:active {
+    text-decoration: underline;
+    color: #ff584d;
+  }
+  .container-fluid a:link {
+    color: #232323;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  .container-fluid a:visited {
+    color: #999;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  .container-fluid a:hover {
+    text-decoration: underline;
+  }
+  .container-fluid a:active {
     text-decoration: underline;
     color: #ff584d;
   }
@@ -69,7 +86,7 @@ body {
   }
   h5 {
     color: #fff;
-    font-weight: bolder;
+    font-weight: bold;
   }
 
 
@@ -94,18 +111,42 @@ body {
     padding-top: 10px;
     padding-bottom: 8px;
     padding-left: 16px;
-    padding-right: 16px;
-    background-color: #242424;
+    padding-right: 16px; 
     border: 2px solid #11bbff;
-    font-size: 15px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bolder;
     border-radius: 12px;
   }
   button:hover {
     text-decoration: underline;
-    border: 2px solid #fff;
+    border-color: #fff;
+    color: #11bbff;
   }
   button:active {
     color: #ff584d;
+    border-color: #ff584d;
+    text-decoration: underline;
+  }
+
+  button2 {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 2px solid #11bbff;
+    font-size: 20px;
+    border-radius: 12px;
+  }
+  button2:hover {
+    text-decoration: underline;
+    border-color: #232323;
+    color: #11bbff;
+  }
+  button2:active {
+    color: #ff584d;
+    border-color: #ff584d;
     text-decoration: underline;
   }
   
