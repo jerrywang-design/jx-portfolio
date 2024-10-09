@@ -63,6 +63,10 @@ body {
     color: #fff;
     padding: 4rem;
   }
+  h2 {
+    color: #fff;
+    line-height: 3rem;
+  }
   h5 {
     color: #fff;
     font-weight: bolder;
@@ -107,7 +111,7 @@ body {
   
 
 
-  /* Hero section */
+/* Hero section */
   .jumbotron {
     z-index: 999;
   }
@@ -117,7 +121,8 @@ body {
     overflow: hidden;
   }
 
-  /* Skills section */
+
+/* Skills section */
   .flexContainer { 
     display: flex;
     flex-direction: row; /* Note: row is default, but it doesn't hurt to practice! */
@@ -138,7 +143,7 @@ body {
     height: 1rem;
   }
   
-  /* Work section */
+/* Work section */
   .container-fluid {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -178,7 +183,7 @@ body {
 
 
 
-  /* About section */
+/* About section */
   a.template-image div.green:hover~img{
     content: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a9614526-315c-495d-be50-d0c38dfd91c0/dcako6j-35f3049e-3365-43d9-bcfb-8b755fa77969.jpg/v1/fill/w_1024,h_749,q_75,strp/aquatan_battle_commander_by_jerryboomerwang_dcako6j-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzQ5IiwicGF0aCI6IlwvZlwvYTk2MTQ1MjYtMzE1Yy00OTVkLWJlNTAtZDBjMzhkZmQ5MWMwXC9kY2FrbzZqLTM1ZjMwNDllLTMzNjUtNDNkOS1iY2ZiLThiNzU1ZmE3Nzk2OS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.7obsqiPllsgNtnCT4U9CZvYA0h0q7VESuFyJ1yuOSMM);
    }
@@ -196,7 +201,7 @@ body {
 
 
 
-  /* Contact section */
+/* Contact section */
   footer {
     background-color: #373738;
     color: white;
@@ -227,6 +232,23 @@ body {
     flex: 0 0 100%;
     box-shadow: 0 0 4px rgba(0,0,0,0.4);
   }
+
+  .container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+   }
+
+  .profile_pic {
+      border-radius: 50%;
+      max-height: 250px;
+   }
+      
+   .text {
+     padding: 2rem;
+   }
+  
 
 
   /* Canvas Eraser from: https://codepen.io/progrape/pen/XXBwWe */
