@@ -5,12 +5,12 @@ html {
 
 body {
     font-family: 'Poppins', Helvetica, sans-serif;
-    color: #000;
-    background: #efefef;
+    color: #242424;
+    background: #242424;
     padding-top: 4rem; /* pushes content below fixed navbar, BUT will also push fixed navbar down; see "top:", below */
   }
   header {
-    background-color: #efefef;
+    background-color: #242424;
     padding-left: 4rem;
     padding-right: 4rem;
     padding-top: 1rem;
@@ -23,8 +23,9 @@ body {
   padding-top: 0rem;
 }
   header img {
-    max-height: 2rem; /* limits size of my logo image */
-/* didn't seem to do anything */    vertical-align: middle; 
+    max-height: 100%; /* limits size of my logo image */
+    /* didn't seem to do anything */    vertical-align: middle; 
+    padding-bottom: 1rem;
   }
   header ul {
     float: right;
@@ -41,8 +42,30 @@ body {
   }
 
   /* Text styles */
+  a:link {
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #ccc;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a:active {
+    text-decoration: underline;
+    color: #f44336;
+  }
   h1 {
+    color: #fff;
     padding: 4rem;
+  }
+  h5 {
+    color: #fff;
+    font-weight: bolder;
   }
 
 
@@ -64,14 +87,25 @@ body {
   }
   
   button {
-    padding: 8px;
-    padding-left: 12px;
-    padding-right: 12px;
-    background-color: #373738;
-    color: white;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #242424;
+    border: 2px solid #11bbff;
     font-size: 15px;
-    border-radius: 4px;
+    border-radius: 12px;
   }
+  button:hover {
+    text-decoration: underline;
+    border: 2px solid #fff;
+  }
+  button:active {
+    color: #f44336;
+    text-decoration: underline;
+  }
+  
+
 
   /* Hero section */
   .jumbotron {
