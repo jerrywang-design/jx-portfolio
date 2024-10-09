@@ -5,8 +5,8 @@ html {
 
 body {
     font-family: 'Poppins', Helvetica, sans-serif;
-    color: #242424;
-    background: #242424;
+    color: #232323;
+    background: #232323;
     padding-top: 4rem; /* pushes content below fixed navbar, BUT will also push fixed navbar down; see "top:", below */
   }
   header {
@@ -57,7 +57,7 @@ body {
   }
   a:active {
     text-decoration: underline;
-    color: #f44336;
+    color: #ff584d;
   }
   h1 {
     color: #fff;
@@ -101,7 +101,7 @@ body {
     border: 2px solid #fff;
   }
   button:active {
-    color: #f44336;
+    color: #ff584d;
     text-decoration: underline;
   }
   
